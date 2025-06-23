@@ -55,8 +55,8 @@ class Controller(Frame):
     self.undertransition_timestamp =  time.time()
     self.prev_evnum = 0
     self.reader_check = False
-    MTMController.set_host(args.mtm_host)
-    MTMController.set_port(args.mtm_port)
+    # MTMController.set_host(args.mtm_host)
+    # MTMController.set_port(args.mtm_port)
   #____________________________________________________________________________
   def __make_menu(self):
     menubar= Menu(self)
@@ -694,10 +694,10 @@ if __name__ == '__main__':
                       The text file which the list of
                       data storage path is written.
                       ''')
-  parser.add_argument('--mtm-host', default='localhost',
-                      help='Which host name to connect MTM controller')
-  parser.add_argument('--mtm-port', type=int, default=24,
-                      help='Which port number to connect MTM controller')
+  # parser.add_argument('--mtm-host', default='localhost',
+  #                     help='Which host name to connect MTM controller')
+  # parser.add_argument('--mtm-port', type=int, default=24,
+  #                     help='Which port number to connect MTM controller')
   args, unparsed = parser.parse_known_args()
   argc = len(sys.argv)
   logging.basicConfig(
@@ -743,13 +743,9 @@ if __name__ == '__main__':
   play sound comman while under stansition state
   usage:  os.system(sound_command)
   '''
-  sound_file = (os.path.abspath(os.path.dirname(__file__))
-                + '/sound/under_transition.wav')
-  # if 'eb0' in os.uname()[1]:
-  #   sound_command = 'aplay ' + sound_file
-  # else:
-  #   sound_command = 'ssh eb0 aplay ' + sound_file
-  sound_command = 'sshpass -p beamtime ssh sks@k18epics aplay -Dhw:1,0 under_transition.wav'
+  sound_file = 'hddaq/Controller/sound/under_transition.wav'
+  sound_command = 'ssh urazato aplay ' + sound_file
+  
   '''
   mainloop
   '''

@@ -7,7 +7,7 @@ import subprocess
 from struct import *
 from tkinter import *
 
-mtm_host = '192.168.10.3'
+# mtm_host = '192.168.10.3'
 
 #______________________________________________________________________________
 class ChildProc(Frame):
@@ -198,8 +198,8 @@ if __name__ == '__main__':
   app.controller_entry('CONTROLLER',
                        'Controller/controller.py '
                        +f'--data-path {storage_path} '
-                       +f'--data-path-list {path_list} '
-                       +f'--mtm-host {mtm_host}')
+                       +f'--data-path-list {path_list} ')
+                       # +f'--mtm-host {mtm_host}')
   app.makebuttons()
   app.updater()
   app.mainloop()
