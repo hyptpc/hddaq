@@ -1,0 +1,5 @@
+#node-name	port
+localhost	8881
+vme01		8881
+yusura		8881
+#fe-easiroc01	8881

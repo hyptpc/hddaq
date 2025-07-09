@@ -1,0 +1,28 @@
+#node-name	port	ringbuf_size(byte)	ringbuf_len
+#localhost	9000 	8192			10
+
+### 18 nodes
+
+vme01		9000 	1000			32000
+
+# HUL-HRTDC
+yusura		9101 	4000			10000
+yusura		9121 	10000			10000
+yusura		9122 	10000			10000
+yusura		9123 	10000			10000
+yusura		9142	10000			10000
+yusura		9143	10000			10000	
+yusura		9144	10000			10000	
+
+# HUL-MHTDC for BLC				
+yusura		9104	80000			10000
+yusura		9105 	80000			10000
+yusura		9106 	80000			10000
+yusura		9107 	80000			10000
+yusura		9108 	80000			10000
+yusura		9109 	80000			10000
+yusura		9110 	80000			10000
+yusura		9111 	80000			10000
+yusura		9112 	80000			10000
+
+#fe-easiroc01	9000	10000			10000
