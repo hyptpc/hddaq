@@ -217,7 +217,7 @@ size_t checkDataSize(unsigned int  max_bytes,
     int ignore = size - max_bytes;
     size = max_bytes;
     std::ostringstream msg;
-    msg << name << ": ERROR (Many data): " << size;
+    msg << name << ": ERROR (Many data): " << size << " > " << max_bytes;
     msock.sendString(MT_WARNING, msg);
     return ignore;
   } else if (size<=0) {
@@ -281,4 +281,3 @@ int checkTcp(kol::TcpBuffer& tcp,
   }
   return 0;
 }
-

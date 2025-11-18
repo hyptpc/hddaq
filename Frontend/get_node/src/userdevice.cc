@@ -69,8 +69,10 @@ init_device( NodeProp& nodeprop )
     {
       int run_number = nodeprop.getRunNumber();
       std::ostringstream oss;
+      oss << "/raid/getdata/e72_2025/cobo" << g_cobo_id
+      // oss << "/raid/getdata/bench_e72_2024jan/cobo" << g_cobo_id
       // oss << "/raid/getdata/bench_e42_2021may/cobo" << g_cobo_id
-      oss << "/raid/getdata/e42_2021may/cobo" << g_cobo_id
+      // oss << "/raid/getdata/e42_2021may/cobo" << g_cobo_id
       // oss << "/raid/getdata/e03_2021feb/cobo" << g_cobo_id
       //oss << "/raid/getdata/bench_e03_2021feb/cobo" << g_cobo_id
 	 << "/run_" << std::setfill('0') << std::setw(4) << run_number

@@ -744,8 +744,8 @@ if __name__ == '__main__':
   usage:  os.system(sound_command)
   '''
   sound_file = 'hddaq/Controller/sound/under_transition.wav'
-  sound_command = 'ssh urazato aplay ' + sound_file
-  
+  sound_command = 'ssh oper@urazato aplay ' + sound_file
+
   '''
   mainloop
   '''
