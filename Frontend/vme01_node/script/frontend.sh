@@ -14,6 +14,6 @@ fi
 while true
 do
     echo -e "\n\n"${frontend}
-    ${bin_dir}/${frontend} --nickname=${nickname} --nodeid=${nodeid}
+    ${bin_dir}/${frontend} --nickname=${nickname} --nodeid=${nodeid} --ignore-nodeprop-update
     sleep 1
 done
