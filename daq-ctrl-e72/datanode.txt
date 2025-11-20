@@ -1,0 +1,42 @@
+#node-name	port	ringbuf_size(byte)	ringbuf_len
+
+### CoBo
+localhost	9000 	1600000		20
+localhost	9001 	1600000		20
+localhost	9002 	2400000		20
+localhost	9003 	2400000		20
+localhost	9004 	2880000		20
+localhost	9005 	2880000		20
+localhost	9006 	2400000		20
+localhost	9007 	1600000		20
+
+# ### VME
+vme01		9000	2000		20000
+
+# HUL-SCALER
+yusura          9101    4000                    20000
+yusura          9102    4000                    20000
+# yusura          9103    4000                    20000
+# HUL-HRTDC
+yusura          9121    10000                   20000
+yusura          9122    10000                   20000
+yusura          9123    10000                   20000
+# yusura          9124    10000                   20000
+yusura          9125    10000                   20000
+yusura          9142    10000                   20000
+yusura          9143    10000                   20000
+yusura          9144    10000                   20000
+yusura          9202    10000                   20000
+
+# HUL-MHTDC for BLC
+yusura          9104    80000                   20000
+yusura          9105    80000                   20000
+yusura          9106    80000                   20000
+yusura          9107    80000                   20000
+yusura          9108    80000                   20000
+yusura          9109    80000                   20000
+yusura          9110    80000                   20000
+yusura          9111    80000                   20000
+yusura          9112    80000                   20000
+
+#fe-easiroc01   9000    10000                   20000
